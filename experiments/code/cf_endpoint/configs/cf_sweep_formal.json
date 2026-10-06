@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "purpose": "formal",
+  "namespace": "cf_endpoint_sweep_v1",
+  "M_values": [
+    500,
+    1000,
+    2000,
+    4000,
+    8000
+  ],
+  "seeds": [
+    2026100301,
+    2026100302,
+    2026100303,
+    2026100304,
+    2026100305,
+    2026100306,
+    2026100307,
+    2026100308,
+    2026100309,
+    2026100310
+  ],
+  "n_test": 2048,
+  "N": 8,
+  "d": 8,
+  "val_fraction": 0.1,
+  "n_features": 13,
+  "rank": 1,
+  "lambda": 0,
+  "t_fixed": 0.5,
+  "K_values": [
+    10,
+    20,
+    40,
+    80,
+    160
+  ],
+  "euler_M": 4000,
+  "runtime": {
+    "device": "cpu",
+    "num_threads": 4,
+    "fit_dtype": "float64",
+    "parameter_dtype": "float32",
+    "training_data_dtype": "float32",
+    "test_data_dtype": "float64",
+    "exact_protocol": "float32 parameters promoted to double; float32-rounded x/z0"
+  },
+  "truth": {
+    "u": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "bump": {
+      "J": 3,
+      "beta": 2,
+      "delta": 1,
+      "omega": [
+        1,
+        0,
+        1
+      ]
+    },
+    "factor_budget": 2,
+    "activation_bound": 2,
+    "slope_bound": 32,
+    "index_scale": 1
+  },
+  "budget": {
+    "active_seconds": 1800,
+    "fit_seconds": 60
+  },
+  "tolerances": {
+    "independent_objective_abs": 2e-10,
+    "formula_max_abs": 2e-11,
+    "decomposition_max_abs": 2e-11,
+    "ratio_max_abs": 2e-12
+  },
+  "statistics_unit": "base_seed",
+  "validation_role": "report noisy loss only; never select",
+  "test_barrier": "all committed solutions and pools verified before test access"
+}

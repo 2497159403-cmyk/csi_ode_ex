@@ -1,0 +1,56 @@
+{
+  "evidence": {
+    "fixed_time": {
+      "source_file": "logs_rerun/formal_fixed_time_20260805_193714/01_fixed_time.log",
+      "sha256": "e7166e060d53090caa2d688a812c812b02e86e5fbbcd0c1599efe862714b5d15",
+      "device_lines": [
+        "[device] Using device: cuda",
+        "[device] CUDA device name: NVIDIA GeForce RTX 5090"
+      ]
+    },
+    "path_matched": {
+      "source_file": "logs/formal_ode_v2_20260810_205536/ode_v2.log",
+      "sha256": "064f1b176793bbbd145dc0d611189453a249d1b510844e767acdbf568967118e",
+      "device_lines": [
+        "[device] Using device: cuda",
+        "[device] CUDA device name: NVIDIA GeForce RTX 5090"
+      ]
+    },
+    "dimension_sensitivity": {
+      "source_file": "logs_rerun/formal_dimension_free_20260806_072146/01_dimension_free.log",
+      "sha256": "a9d99a8d2c95c26a97015146737cf43e75d13b68ab36f06d5e68b276c8179dc7",
+      "device_lines": [
+        "[device] Using device: cuda",
+        "[device] CUDA device name: NVIDIA GeForce RTX 5090"
+      ]
+    },
+    "condition_ablation": {
+      "source_file": "logs_rerun/formal_condition_ablation_20260807_173216/01_condition_ablation.log",
+      "sha256": "7586ef4297653b11d563ca735ffc3fa0933943ab50c760f9c8e174cd79a7d357",
+      "device_lines": [
+        "[device] Using device: cuda",
+        "[device] CUDA device name: NVIDIA GeForce RTX 5090"
+      ]
+    },
+    "cf_endpoint": {
+      "source_file": "working_ode_endpoint_cf_v1/outputs/cf_sweep_formal_v1/plan.json",
+      "sha256": "f3a0a821ffda2e076074cc04a91f9ad204b8b1e5e8064f3bb99d1f482e7518ee",
+      "environment": {
+        "python": "3.12.2",
+        "torch": "2.8.0",
+        "numpy": "2.3.3",
+        "scipy": "1.16.2",
+        "platform": "macOS-15.7.3-arm64-arm-64bit",
+        "device": "cpu",
+        "threads": 4,
+        "deterministic": true
+      }
+    }
+  },
+  "limitations": [
+    "Old exact Python/PyTorch/CUDA and package versions are not linked by an experiment-specific record in this delivery.",
+    "The older csi_project_full environment file was not attributed to these four runs and is not treated as their environment.",
+    "CF CPU processor model, RAM and wall-clock totals are not reported here.",
+    "Complete hyperparameter-selection search/history and neural checkpoints were not archived."
+  ]
+}

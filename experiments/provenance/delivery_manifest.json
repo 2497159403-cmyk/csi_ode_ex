@@ -1,0 +1,145 @@
+{
+  "purpose": "New checksum inventory generated after the formal-only package cleanup; not an original-run commitment or signature.",
+  "generated_on": "2026-10-06",
+  "original_data_reference": "provenance/source_manifest.json (unchanged)",
+  "adaptations": [
+    "Paper plotter writes only the six current PDF figures and retains all archived-result checks, including beta=2 references and the -0.810 all-budget descriptive fit.",
+    "Neural wrapper removes smoke mode and requires a fresh output directory outside the delivered paper; scientific scripts and libraries are unchanged.",
+    "CF wrapper accepts only the unchanged formal design, removes the optional diagnostic plot stage and smoke wording, and freezes only required modules, formal config and requirements.",
+    "Historical source and environment records are preserved as historical metadata, not the current delivery file list."
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "8c7714277164b15571e9d1851b57214d6c80da725d211102c4fb40ebda51cc3e"
+    },
+    {
+      "path": "README.md",
+      "sha256": "6ab978eb17b840422ff85b464588ee31180092e6ad66e4b9c6712f01df41c917"
+    },
+    {
+      "path": "code/cf_endpoint/configs/cf_sweep_formal.json",
+      "sha256": "01e0c9e96c7021a3498b0c4c3c0a7f0dfe7c18c824f1849a2d64312c24e96c73"
+    },
+    {
+      "path": "code/cf_endpoint/endpoint_ode/__init__.py",
+      "sha256": "808b0396841b5b0161785c27f02a67c734ffa6f459b73a8a28b897bb7ab30d79"
+    },
+    {
+      "path": "code/cf_endpoint/endpoint_ode/cf_sweep.py",
+      "sha256": "f53e7c07d076a96125d7cdb685bf4bba4f21fbab1bb2f79896368504d257fccc"
+    },
+    {
+      "path": "code/cf_endpoint/endpoint_ode/cosine.py",
+      "sha256": "2f6c81ff624938999dfab0782582ed91f86609d5e9b0dfc0834d5a52268c1baf"
+    },
+    {
+      "path": "code/cf_endpoint/endpoint_ode/data.py",
+      "sha256": "a304e99e27e8f52dcaf457ef37d1b3bbdee54b2fa57163fe6f91d080741b55a3"
+    },
+    {
+      "path": "code/cf_endpoint/endpoint_ode/io.py",
+      "sha256": "32b11328dc0466fe3d55bcaef1460c35c718d775d4a08d11e7a66ef84d5d19eb"
+    },
+    {
+      "path": "code/cf_endpoint/endpoint_ode/objectives.py",
+      "sha256": "11f11c54f46ac04ba8991240d4982d5b6dfb31924b5c4eddda32006504fbe0b3"
+    },
+    {
+      "path": "code/cf_endpoint/endpoint_ode/solvers.py",
+      "sha256": "a07a3e85d98f6d40acf509146c3b9dc3fe19483d5ea3c24e6a392b4dbbfd926d"
+    },
+    {
+      "path": "code/cf_endpoint/endpoint_ode/truth.py",
+      "sha256": "9f2ee64d81e8d7f4efaebd4bb23bad9c2a623218cd35a078c764a9041d6d3e26"
+    },
+    {
+      "path": "code/cf_endpoint/requirements.txt",
+      "sha256": "f56b8bc36f31e72f41ab3a3e54febdd943ac759c7a58ed65fc5720b0afb19a14"
+    },
+    {
+      "path": "code/neural/csi_exp/__init__.py",
+      "sha256": "fd2f35fae7977f64762523aa90e651807e108de6d6b89c6e160bdb2ed0fe4b33"
+    },
+    {
+      "path": "code/neural/csi_exp/dynamics.py",
+      "sha256": "4846e25c45ad860d62be95805d8ec79c1f31bfbc46e0e9d9d56db7c6a1555acd"
+    },
+    {
+      "path": "code/neural/csi_exp/metrics.py",
+      "sha256": "7f3991ad519c1c617e6900ea3681443142fb664721445bfb0119ea5a6224f95e"
+    },
+    {
+      "path": "code/neural/csi_exp/models.py",
+      "sha256": "58e31ec789442190459465d66885ccebcbac7cbf60d2249b4467690a8d6aa273"
+    },
+    {
+      "path": "code/neural/csi_exp/synthetic.py",
+      "sha256": "381cab78377f133fcbaef8b355abb5744ccca84dec64074cc9695bc55dd3f0b4"
+    },
+    {
+      "path": "code/neural/csi_exp/train.py",
+      "sha256": "5167d3a04073544c98aadcd17397e236bdc0f944944938066d23d34b90a79672"
+    },
+    {
+      "path": "code/neural/csi_exp/utils.py",
+      "sha256": "6b691b2b73521051f19acd549fa8260b7dd60ab5fe35a7b2b2423c2d4e1a1c44"
+    },
+    {
+      "path": "code/neural/experiments/__init__.py",
+      "sha256": "eaa3d7c56dc63ba13d3253545d4a22fca4cd2b7ae24a4d0bc1257abaa804a3c8"
+    },
+    {
+      "path": "code/neural/experiments/ode_generation_error_v2.py",
+      "sha256": "9ee6b93302291df5a1331c2d30c073bf468703d3e4eed7f58cc22871970eebd8"
+    },
+    {
+      "path": "code/neural/experiments/synthetic_condition_ablation.py",
+      "sha256": "27a364ee00a9aa99a308685e38c2e1add808e1e64c584402c35d1a25060de71b"
+    },
+    {
+      "path": "code/neural/experiments/synthetic_dimension_free.py",
+      "sha256": "092fff6909c403d45bda69a793d2381c752b7f4d81e267ac4983fad10acbb622"
+    },
+    {
+      "path": "code/neural/experiments/synthetic_fixed_time.py",
+      "sha256": "5b3033a67cec316ef2e7eb0b50a4264b68be980a130cb1600d70dadc1566fc28"
+    },
+    {
+      "path": "code/neural/requirements.txt",
+      "sha256": "2430d78880514805c9aa2cead3c121874ef30b656f456894a39310baf119c022"
+    },
+    {
+      "path": "code/run_neural.py",
+      "sha256": "cc65ae05fe3b7807061d19cc919023d0e37ddb3646de7eb346820bee372ab639"
+    },
+    {
+      "path": "plot_figures.py",
+      "sha256": "03f39a91076293e00699490b8e7fe2c7018ca20720af92036aef89754c5a65b6"
+    },
+    {
+      "path": "provenance/cf_source_provenance.json",
+      "sha256": "6de97732ea0e36b142027fe33d54352d97d6e72e97180634ffb7711ce72c5485"
+    },
+    {
+      "path": "provenance/historical_environment.json",
+      "sha256": "7e004c607980dea969cc1347793110728102adf1c96074ea64c6d463a10eedd8"
+    },
+    {
+      "path": "provenance/neural_source_provenance.json",
+      "sha256": "a3184292771c9588600f16ddd6b4a8939d7a1d3e0b6177bcd5e13727af096b2c"
+    },
+    {
+      "path": "provenance/source_manifest.json",
+      "sha256": "76a395403fd0d121d378732ecbc56584db136bdc7aa3f547017554816020c54d"
+    },
+    {
+      "path": "requirements-figures.txt",
+      "sha256": "9f4169652bf03e583818938fda9ad7c0555913a6fd12c255cf39927127e38d94"
+    },
+    {
+      "path": "verify_results.py",
+      "sha256": "cb995e216dcc2925ef96a7b77eccfdfa444f7f8ad2424947055951f101994110"
+    }
+  ]
+}

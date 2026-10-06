@@ -1,0 +1,93 @@
+{
+  "archive": "working_ode_endpoint_cf_v1/outputs/cf_sweep_formal_v1/source_snapshot",
+  "formal_plan_environment": {
+    "python": "3.12.2",
+    "torch": "2.8.0",
+    "numpy": "2.3.3",
+    "scipy": "1.16.2",
+    "platform": "macOS-15.7.3-arm64-arm-64bit",
+    "device": "cpu",
+    "threads": 4,
+    "deterministic": true
+  },
+  "files": [
+    {
+      "source_file": "endpoint_ode/__init__.py",
+      "source_sha256": "808b0396841b5b0161785c27f02a67c734ffa6f459b73a8a28b897bb7ab30d79",
+      "copied_file": "endpoint_ode/__init__.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "endpoint_ode/cf_sweep.py",
+      "source_sha256": "33763611801f50b615825e86e4cb9a3515ab277caad40d134a67cac51eac061e",
+      "copied_file": "endpoint_ode/cf_sweep.py",
+      "changes": "Change source inventory to the necessary bundled dependencies plus requirements and this provenance file; adjust documentation link. Scientific methods, config guard, test barrier, stream seeds, budgets, scoring and audit unchanged."
+    },
+    {
+      "source_file": "endpoint_ode/cosine.py",
+      "source_sha256": "2f6c81ff624938999dfab0782582ed91f86609d5e9b0dfc0834d5a52268c1baf",
+      "copied_file": "endpoint_ode/cosine.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "endpoint_ode/data.py",
+      "source_sha256": "a304e99e27e8f52dcaf457ef37d1b3bbdee54b2fa57163fe6f91d080741b55a3",
+      "copied_file": "endpoint_ode/data.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "endpoint_ode/io.py",
+      "source_sha256": "32b11328dc0466fe3d55bcaef1460c35c718d775d4a08d11e7a66ef84d5d19eb",
+      "copied_file": "endpoint_ode/io.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "endpoint_ode/objectives.py",
+      "source_sha256": "11f11c54f46ac04ba8991240d4982d5b6dfb31924b5c4eddda32006504fbe0b3",
+      "copied_file": "endpoint_ode/objectives.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "endpoint_ode/solvers.py",
+      "source_sha256": "a07a3e85d98f6d40acf509146c3b9dc3fe19483d5ea3c24e6a392b4dbbfd926d",
+      "copied_file": "endpoint_ode/solvers.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "endpoint_ode/truth.py",
+      "source_sha256": "9f2ee64d81e8d7f4efaebd4bb23bad9c2a623218cd35a078c764a9041d6d3e26",
+      "copied_file": "endpoint_ode/truth.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "configs/cf_sweep_formal.json",
+      "source_sha256": "01e0c9e96c7021a3498b0c4c3c0a7f0dfe7c18c824f1849a2d64312c24e96c73",
+      "copied_file": "configs/cf_sweep_formal.json",
+      "changes": "None"
+    },
+    {
+      "source_file": "configs/cf_sweep_smoke.json",
+      "source_sha256": "3f03d985ba9199aae33e8db2dd4c1f816c64c8d405844c9e514a86598d795979",
+      "copied_file": "configs/cf_sweep_smoke.json",
+      "changes": "None"
+    },
+    {
+      "source_file": "scripts/smoke_cf_sweep.py",
+      "source_sha256": "4c2a65156ac7424e30bf4739c409076acad4c651caf3522e21bddafd3bc921b5",
+      "copied_file": "scripts/smoke_cf_sweep.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "tests/test_cf_sweep.py",
+      "source_sha256": "1bebfa9a53da4dfa3c2bb0f305dc37554f83fe67d29db94848d01280b4e5890e",
+      "copied_file": "tests/test_cf_sweep.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "tests/test_cosine.py",
+      "source_sha256": "b3d4f5fbae3b16f6bb985f1442306378aa68b607ed6d1c9de4213b297340e696",
+      "copied_file": "tests/test_cosine.py",
+      "changes": "None"
+    }
+  ]
+}

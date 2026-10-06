@@ -1,0 +1,188 @@
+{
+  "purpose": "Minimal read-only excerpts for reproducing reported figures and tables; not a training archive.",
+  "statistics": "Means and sample SDs (ddof=1) over selected repetitions/base seeds; no smoothing or point exclusion.",
+  "selection": "Old neural runs select the final-epoch restart with minimum validation loss; CF has one global fit per M and seed and no validation selection.",
+  "datasets": {
+    "fixed_time": {
+      "group_columns": [
+        "M",
+        "repeat"
+      ],
+      "plotted_column": "test_mse",
+      "unit": "noiseless field squared Frobenius error divided by N and test regression examples",
+      "summary_columns": [
+        "test_mse_mean",
+        "test_mse_std"
+      ]
+    },
+    "path_matched": {
+      "group_columns": [
+        "M",
+        "repeat"
+      ],
+      "plotted_column": "coupled_endpoint_mse",
+      "unit": "learned/reference Euler-200 endpoint squared difference divided by N*d and evaluation trajectories",
+      "summary_columns": [
+        "coupled_endpoint_mse_mean",
+        "coupled_endpoint_mse_std"
+      ]
+    },
+    "dimension_sensitivity": {
+      "group_columns": [
+        "d",
+        "M",
+        "repeat"
+      ],
+      "plotted_column": "test_mse",
+      "unit": "noiseless field squared Frobenius error divided by N and test regression examples",
+      "summary_columns": [
+        "test_mse_mean",
+        "test_mse_std"
+      ]
+    },
+    "condition_ablation": {
+      "group_columns": [
+        "model",
+        "repeat"
+      ],
+      "plotted_column": "test_mse",
+      "unit": "noiseless field squared Frobenius error divided by N and test regression examples",
+      "summary_columns": [
+        "test_mse_mean",
+        "test_mse_std"
+      ]
+    },
+    "cf_endpoint": {
+      "group_columns": [
+        "M",
+        "method",
+        "seed"
+      ],
+      "plotted_columns": [
+        "terminal_per_token",
+        "field_per_token"
+      ],
+      "unit": "squared Frobenius error divided by N and test endpoints",
+      "summary_columns": [
+        "terminal_mean",
+        "terminal_sample_SD",
+        "field_mean",
+        "field_sample_SD"
+      ],
+      "identity_diagnostic_columns": {
+        "ratio_max_abs": "maximum pointwise same-precision field/terminal identity residual",
+        "runtime_ratio_max_abs": "maximum pointwise residual using the actual float32 field evaluation"
+      },
+      "euler_columns": {
+        "discretization": "double Euler minus same-parameter exact flow, per token",
+        "rounding": "float32 runtime Euler minus double Euler, per token",
+        "total": "float32 runtime Euler minus same-parameter exact flow, per token",
+        "exact_risk": "same-parameter exact flow minus synchronized truth, per token",
+        "euler_risk_double": "double Euler flow minus synchronized truth, per token",
+        "risk_cross_double": "cross term in the double-Euler target-risk identity, per token"
+      }
+    }
+  },
+  "files": [
+    {
+      "copied_path": "data/cf_endpoint/config.json",
+      "sha256": "01e0c9e96c7021a3498b0c4c3c0a7f0dfe7c18c824f1849a2d64312c24e96c73",
+      "source_file": "aiasis_v3_实验代码修改_修改v1/working_ode_endpoint_cf_v1/outputs/cf_sweep_formal_v1/source_snapshot/configs/cf_sweep_formal.json"
+    },
+    {
+      "copied_path": "data/cf_endpoint/euler.csv",
+      "sha256": "446b661e3500c723b45e0c69dd26f13d385e5b4ccea0cf8c37b853a67d122251",
+      "source_file": "aiasis_v3_实验代码修改_修改v1/working_ode_endpoint_cf_v1/outputs/cf_sweep_formal_v1/evaluation/euler.csv"
+    },
+    {
+      "copied_path": "data/cf_endpoint/per_seed.csv",
+      "sha256": "81f630561a266851fb61825f6476b1a770654ae10158d5244ae01b2a0cbce834",
+      "source_file": "aiasis_v3_实验代码修改_修改v1/working_ode_endpoint_cf_v1/outputs/cf_sweep_formal_v1/evaluation/per_seed.csv"
+    },
+    {
+      "copied_path": "data/cf_endpoint/source_summary.csv",
+      "sha256": "4b0421c266081e5541ef20a7cc9893a1f5ae2afb2f528fe05e5a8ff9399ca536",
+      "source_file": "aiasis_v3_实验代码修改_修改v1/working_ode_endpoint_cf_v1/outputs/cf_sweep_formal_v1/evaluation/summary.csv"
+    },
+    {
+      "copied_path": "data/condition_ablation/config.json",
+      "sha256": "f9d496a448b73d0582e8c61653cf4e06f1ec3eb4580da8e74e40fe3d171316b0",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_condition_ablation_20260807_173216/synthetic_condition_ablation/20260807_173240/config.json"
+    },
+    {
+      "copied_path": "data/condition_ablation/results_all_restarts.csv",
+      "sha256": "120ad06cb5b3565ebc0c711f3f680cdf5e87cd116d8ba23374d3afcf362d0a0d",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_condition_ablation_20260807_173216/synthetic_condition_ablation/20260807_173240/results_all_restarts.csv"
+    },
+    {
+      "copied_path": "data/condition_ablation/results_raw.csv",
+      "sha256": "b42f56120b3891c6e9e8d9ad39076c38869a909f34ad552c8476452ca031f5ba",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_condition_ablation_20260807_173216/synthetic_condition_ablation/20260807_173240/results_raw.csv"
+    },
+    {
+      "copied_path": "data/condition_ablation/source_summary.csv",
+      "sha256": "089553a5366a75c93ddfc4032e5e997fdb6ab9edce3c9c3f256d7a74cc0762bd",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_condition_ablation_20260807_173216/synthetic_condition_ablation/20260807_173240/summary.csv"
+    },
+    {
+      "copied_path": "data/dimension_sensitivity/config.json",
+      "sha256": "d9d1da4b587e89e7d868beb5bbf2b4b4cd6ca70b8e5d2a665edc5d6902271e5d",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_dimension_free_20260806_072146/synthetic_dimension_free/20260806_072210/config.json"
+    },
+    {
+      "copied_path": "data/dimension_sensitivity/results_all_restarts.csv",
+      "sha256": "1f06302e1f5c3b89406dcd304331f6cdb038ed651a83e61d2684df1d75cd6fc0",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_dimension_free_20260806_072146/synthetic_dimension_free/20260806_072210/results_all_restarts.csv"
+    },
+    {
+      "copied_path": "data/dimension_sensitivity/results_raw.csv",
+      "sha256": "a6d8de0a64b2ab05edc0592de19070c3a1161d378fadb8bfc778adef9962da91",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_dimension_free_20260806_072146/synthetic_dimension_free/20260806_072210/results_raw.csv"
+    },
+    {
+      "copied_path": "data/dimension_sensitivity/source_summary.csv",
+      "sha256": "d110fc60c15e3ee22493bae4b27e6601da71957df96a838366d034ce166419df",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_dimension_free_20260806_072146/synthetic_dimension_free/20260806_072210/summary.csv"
+    },
+    {
+      "copied_path": "data/fixed_time/config.json",
+      "sha256": "bf72a615e72fe2f60dfcc6dc7444714f0f4f70c7959a309f235231012e79a469",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_fixed_time_20260805_193714/synthetic_fixed_time/20260805_193749/config.json"
+    },
+    {
+      "copied_path": "data/fixed_time/results_all_restarts.csv",
+      "sha256": "ced574260dfa161658bf821016530a89e56eeb8e816bf34eb05f932bd858aa34",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_fixed_time_20260805_193714/synthetic_fixed_time/20260805_193749/results_all_restarts.csv"
+    },
+    {
+      "copied_path": "data/fixed_time/results_raw.csv",
+      "sha256": "58a7f27af0760d96c1564c2f7e8525c408965c11bb271c7e802ccce75291a08b",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_fixed_time_20260805_193714/synthetic_fixed_time/20260805_193749/results_raw.csv"
+    },
+    {
+      "copied_path": "data/fixed_time/source_summary.csv",
+      "sha256": "5593391e06d8c2d2f0e072a6a9b7421038efdd9d386806c64e4cbf6aa6b14fb2",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_fixed_time_20260805_193714/synthetic_fixed_time/20260805_193749/summary.csv"
+    },
+    {
+      "copied_path": "data/path_matched/config.json",
+      "sha256": "388e82f716d5e93f5ad3cc54f38ad23bc08eb22fa957092752394ca8b1ace643",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_ode_v2_20260810_205536/ode_generation_error_v2_path/20260810_205548/config.json"
+    },
+    {
+      "copied_path": "data/path_matched/results_all_restarts.csv",
+      "sha256": "5290ba2e56b876465032cfb7f3935c92b844a0d455b6c29be351576d98f9a15c",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_ode_v2_20260810_205536/ode_generation_error_v2_path/20260810_205548/results_all_restarts.csv"
+    },
+    {
+      "copied_path": "data/path_matched/results_raw.csv",
+      "sha256": "482a270258cfb83700f6765ea6f92c50a50c39def9831940a9d7496539e748b1",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_ode_v2_20260810_205536/ode_generation_error_v2_path/20260810_205548/results_raw.csv"
+    },
+    {
+      "copied_path": "data/path_matched/source_summary.csv",
+      "sha256": "dc9f8b1fb808896242c695d38857faf8f2ce5c041b0346760fd092d45a2f4703",
+      "source_file": "aiasis_v3_实验代码修改_baseline/outputs_rerun/formal_ode_v2_20260810_205536/ode_generation_error_v2_path/20260810_205548/summary.csv"
+    }
+  ]
+}

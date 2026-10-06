@@ -1,0 +1,73 @@
+{
+  "archive": "csi_project_rerun_clean",
+  "cross_check": "All listed files also match aiasis_v3_experiment_baseline/source_snapshot byte-for-byte before ODE-only extraction.",
+  "historical_code_freeze": "Not a contemporaneous pre-run hash commitment; do not infer historical bit identity.",
+  "files": [
+    {
+      "source_file": "csi_exp/__init__.py",
+      "source_sha256": "fd2f35fae7977f64762523aa90e651807e108de6d6b89c6e160bdb2ed0fe4b33",
+      "copied_file": "csi_exp/__init__.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "csi_exp/models.py",
+      "source_sha256": "58e31ec789442190459465d66885ccebcbac7cbf60d2249b4467690a8d6aa273",
+      "copied_file": "csi_exp/models.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "csi_exp/synthetic.py",
+      "source_sha256": "381cab78377f133fcbaef8b355abb5744ccca84dec64074cc9695bc55dd3f0b4",
+      "copied_file": "csi_exp/synthetic.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "csi_exp/train.py",
+      "source_sha256": "5167d3a04073544c98aadcd17397e236bdc0f944944938066d23d34b90a79672",
+      "copied_file": "csi_exp/train.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "csi_exp/utils.py",
+      "source_sha256": "6b691b2b73521051f19acd549fa8260b7dd60ab5fe35a7b2b2423c2d4e1a1c44",
+      "copied_file": "csi_exp/utils.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "csi_exp/metrics.py",
+      "source_sha256": "7f3991ad519c1c617e6900ea3681443142fb664721445bfb0119ea5a6224f95e",
+      "copied_file": "csi_exp/metrics.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "csi_exp/dynamics.py",
+      "source_sha256": "b13bad848d467e98bd7ea19b36174985f3e3e566f94bdd99ac01d9cc9284ab76",
+      "copied_file": "csi_exp/dynamics.py",
+      "changes": "Keep ode_euler function unchanged; remove SDE/Brownian helpers, unused Tuple import, and adjust module description."
+    },
+    {
+      "source_file": "experiments/synthetic_fixed_time.py",
+      "source_sha256": "5b3033a67cec316ef2e7eb0b50a4264b68be980a130cb1600d70dadc1566fc28",
+      "copied_file": "experiments/synthetic_fixed_time.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "experiments/synthetic_dimension_free.py",
+      "source_sha256": "092fff6909c403d45bda69a793d2381c752b7f4d81e267ac4983fad10acbb622",
+      "copied_file": "experiments/synthetic_dimension_free.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "experiments/synthetic_condition_ablation.py",
+      "source_sha256": "27a364ee00a9aa99a308685e38c2e1add808e1e64c584402c35d1a25060de71b",
+      "copied_file": "experiments/synthetic_condition_ablation.py",
+      "changes": "None"
+    },
+    {
+      "source_file": "experiments/ode_generation_error_v2.py",
+      "source_sha256": "8efa84d279a758e2342fbad9eec5df472e8495501d305fb417fffc5c1f1201ff",
+      "copied_file": "experiments/ode_generation_error_v2.py",
+      "changes": "Final newline normalized; executable content unchanged."
+    }
+  ]
+}
